@@ -1,82 +1,405 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Meu Portfólio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>Meu Portfólio</h1>
-	</header>
-
-	<main>
-        <section id="sobre-mim">
-            <h2>Pedro Henrique Santos Masloff</h2>
-            <p>20 Anos - Uberlândia - 34 9 9316-9889 - pedromasloff.drive@gmail.com 
-            </p>
-        </section>
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos para seções */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #E0F2F1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Estilos para lista de empregos */
+  ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  li h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+  
+  li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Estilos para grade de portfólio */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-item12 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("caminho/para/imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    }
     
-        <section id="meus-empregos">
-            <h2>Experiência</h2>
-            <ul>
-                <li>
-                    <h3>Administrador de Segurança da Informação, GWCloud Tecnologia e Servicos S.A</h3>
-                    <p>JUN/2022 - Presente</p>
-                    <p>Descrição das minhas atividades na empresa 1</p>
-                </li>
-                <li>
-                    <h3>Analista de Suporte Computacional, ARCOM S/A</h3>
-                    <p>OUT/2020 - JUN/2022</p>
-                    <p>Responsável pela manutenção de computadores, servidores e NVR. 
-
-                        Monitoramento de Backup e processos utilizando o Zabbix. 
-                        
-                        Montagem de Servidores Windows Server e Linux. 
-                        
-                        Implementação do Secure Shell (SSH), verificando a segurança dos Deploys. 
-                        
-                        Realização de procedimentos de testes SD-WAN. 
-                        
-                        Utilização do Active Directory. </p>
-                </li>
-                <!-- Adicione mais itens, se necessário -->
-            </ul>
-        </section>
+    .portfolio-item12 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    }
     
-        <section id="meus-projetos">
-            <h2>Conhecimento e Projetos</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://placeimg.com/640/480/tech" alt="Projeto 1">
-                    <div class="overlay">
-                        <div class="overlay-content">
-                            <h4>Habilidades</h4>
-                            <a href="minhas-habilidades.html" class="btn">Conhecer</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placeimg.com/640/480/arch" alt="Projeto 2">
-                    <div class="overlay">
-                        <div class="overlay-content">
-                            <h4>Atividades</h4>
-                            <a href="atividades.html" class="btn">Conhecer</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placeimg.com/640/480/nature" alt="Projeto 3">
-                    <div class="overlay">
-                        <div class="overlay-content">
-                            <h4>Projeto 3</h4>
-                            <p>Descrição do projeto 3</p>
-                            <a href="projeto3.html" class="btn">Conhecer</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Adicione mais itens, se necessário -->
-            </div>
-        </section>
-    </main>
-</body>
-</html>
+    .portfolio-item12 .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(7, 7, 7);
+    }
+    
+    .portfolio-item12 .overlay-content h4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    }
+    
+    .portfolio-item12 .overlay-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .portfolio-item12 .overlay-content li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+    
+    .portfolio-item12 .overlay-content a.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    }
+    
+    .portfolio-item12 .overlay-content a.btn:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    }
+    
+    
+
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    text-align: center;
+  }
+  
+  .overlay-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+  
+
+  
+  .overlay-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333; /* Define a cor do texto para preto */
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Adiciona um fundo verde claro para o corpo da página 94a1a6 */
+  body {
+    background-color: #aab7bf; 
+  }
+  
+  /* Define a cor do texto para branco no cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Define a cor do texto para preto no conteúdo */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Adiciona um fundo verde claro para a lista de empregos */
+  ul {
+    list-style: none;
+    background-color: #ebf0f2; /*d1f5d3*/
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  /* Define a cor do texto para preto nos itens da lista */
+  li h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Adiciona um fundo verde claro para a grade de portfólio */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebf0f2;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  /* Define a cor do texto para preto nos itens da grade de portfólio */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    text-align: center;
+    color: #333;
+  }
+  
+
+
+  
+  .overlay-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .overlay-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .portfolio-item {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 2rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .portfolio-item {
+      flex: 0 0 100%;
+    }
+  }
+  
+
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%;
+}
+
+.overlay-content h4 {
+    margin-top: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.overlay-content p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.overlay-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: .3s ease;
+}
+
+.overlay-content .btn:hover {
+    background-color: black;
+    color: white;
+}
+

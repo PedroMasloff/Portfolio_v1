@@ -1,0 +1,277 @@
+/* Definir fontes personalizadas */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+  }
+  
+  /* Estilização geral */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .cart a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff5e00;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  /* Estilo da seção de produtos em destaque */
+  .featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  .product-card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .product-info h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .product-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    background-color: #ff5e00;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: all 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #ff8c00;
+    color: #000;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .footer-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-info p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .footer-social ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-social li {
+    margin: 0 10px;
+  }
+  
+  .footer-social a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+ /* Estilo do botão do modal */
+.overlay-content .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    transition: .3s ease;
+  }
+  
+  .overlay-content .btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Estilo do botão geral */
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilo para dispositivos móveis */
+  @media only screen and (max-width: 768px) {
+    /* Estilo do cabeçalho */
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo h1 {
+      font-size: 20px;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    .cart {
+      margin-left: auto;
+    }
+  
+    /* Estilo da seção de produtos em destaque */
+    .featured-products {
+      margin: 10px 0;
+    }
+  
+    .product-card {
+      margin: 10px auto;
+    }
+  
+    .product-card img {
+      max-width: 100%;
+    }
+  
+    /* Estilo do rodapé */
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-info {
+      text-align: center;
+    }
+  
+    .footer-social {
+      margin-top: 10px;
+    }
+  
+    .footer-social ul {
+      justify-content: center;
+    }
+  
+    .footer-social li {
+      margin: 0 5px;
+    }
+  
+    .overlay-content .btn {
+      margin: 20px auto 0;
+    }
+  }
+
+  .overlay-content .btn {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  
+  .overlay-content .btn a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .overlay-content .btn a:hover {
+    background-color: #3e8e41;
+  }
