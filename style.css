@@ -1,0 +1,250 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para o cabeçalho */
+  header {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos para seções */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #E0F2F1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Estilos para lista de empregos */
+  ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  li h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+  
+  li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  /* Estilos para grade de portfólio */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    text-align: center;
+  }
+  
+  .overlay-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+  }
+  
+  .overlay-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333; /* Define a cor do texto para preto */
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Adiciona um fundo verde claro para o corpo da página 94a1a6 */
+  body {
+    background-color: #aab7bf; 
+  }
+  
+  /* Define a cor do texto para branco no cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Define a cor do texto para preto no conteúdo */
+  section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Adiciona um fundo verde claro para a lista de empregos */
+  ul {
+    list-style: none;
+    background-color: #ebf0f2; /*d1f5d3*/
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  /* Define a cor do texto para preto nos itens da lista */
+  li h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Adiciona um fundo verde claro para a grade de portfólio */
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ebf0f2;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+  }
+  
+  /* Define a cor do texto para preto nos itens da grade de portfólio */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay-content {
+    text-align: center;
+    color: #333;
+  }
+  
+  .overlay-content h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .overlay-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  

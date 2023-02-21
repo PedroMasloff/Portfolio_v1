@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Portfólio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Meu Portfólio</h1>
+	</header>
+
+	<main>
+		<section id="sobre-mim">
+			<h2>Sobre Mim</h2>
+			<p>Insira aqui uma breve descrição sobre você, suas experiências e objetivos profissionais.</p>
+		</section>
+
+		<section id="meus-empregos">
+			<h2>Meus Empregos</h2>
+			<ul>
+				<li>
+					<h3>Nome da empresa 1</h3>
+					<p>Período em que trabalhei na empresa 1</p>
+					<p>Descrição das minhas atividades na empresa 1</p>
+				</li>
+				<li>
+					<h3>Nome da empresa 2</h3>
+					<p>Período em que trabalhei na empresa 2</p>
+					<p>Descrição das minhas atividades na empresa 2</p>
+				</li>
+				<!-- Adicione mais itens, se necessário -->
+			</ul>
+		</section>
+
+		<section id="meus-projetos">
+			<h2>Meus Projetos</h2>
+			<div class="portfolio-grid">
+				<div class="portfolio-item">
+					<img src="https://placeimg.com/640/480/tech" alt="Projeto 1">
+					<div class="overlay">
+						<div class="overlay-content">
+							<h4>Projeto 1</h4>
+							<p>Descrição do projeto 1</p>
+							<a href="#" class="btn">Ver projeto</a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<img src="https://placeimg.com/640/480/arch" alt="Projeto 2">
+					<div class="overlay">
+						<div class="overlay-content">
+							<h4>Projeto 2</h4>
+							<p>Descrição do projeto 2</p>
+							<a href="#" class="btn">Ver projeto</a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<img src="https://placeimg.com/640/480/nature" alt="Projeto 3">
+					<div class="overlay">
+						<div class="overlay-content">
+							<h4>Projeto 3</h4>
+							<p>Descrição do projeto 3</p>
+							<a href="#" class="btn">Ver projeto</a>
+						</div>
+					</div>
+				</div>
+				<!-- Adicione mais itens, se necessário -->
+			</div>
+		</section>
+
+		<section id="minhas-habilidades">
+			<h2>Minhas Habilidades</h2>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>JavaScript</li>
+				<li>Python</li>
+				<!-- Adicione mais habilidades, se necessário -->
+			</ul>
+		</section>
+	</main>
+</body>
+</html>
+
+
+
+/* estilo da seção sobre */
+.about {
+    background-color: #fff;
+    padding: 100px 0;
+  }
+  
+  .about-heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-heading h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .about-heading p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .about-content img {
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .about-content img:hover {
+    transform: scale(1.1);
+  }
+  
+  .about-text {
+    width: 50%;
+    padding: 0 50px;
+  }
+  
+  .about-text h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* estilo da seção portfolio */
+  .portfolio {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+  }
+  
+  .portfolio-heading {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .portfolio-heading h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-heading p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  .portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .portfolio-item {
+    width: 30%;
+    position: relative;
+    margin-bottom: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .portfolio-item .overlay-content {
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .portfolio-item:hover .overlay-content {
+    opacity: 1;
+  }
+  
+  .portfolio-item .overlay-content h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(204, 204, 204, 0.8);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  .portfolio-item .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .portfolio-item:hover .overlay-content {
+    opacity: 1;
+  }
+  
+  .portfolio-item .overlay-content h2,
+  .portfolio-item .overlay-content p {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .portfolio-item .overlay-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-item .overlay-content p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  .portfolio-item .overlay-content p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.4;
+  }
+  
+  /* Overlay */
+  .portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+  .portfolio-item:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Overlay content */
+  .portfolio-item .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+  }
+  
+  .portfolio-item:hover .overlay-content {
+    opacity: 1;
+  }
+  
+  .portfolio-item .overlay-content h4 {
+    margin-top: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .portfolio-item .overlay-content p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #fff;
+    line-height: 1.4;
+  }
+  
+  .portfolio-item .overlay-content .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .portfolio-item .overlay-content .btn:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  
+
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto 3</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Projeto 3</h1>
+	<p>Descrição do projeto 3</p>
+	<!-- Adicione aqui o conteúdo da página do projeto 3 -->
+</body>
+</html>

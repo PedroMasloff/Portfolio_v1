@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Portfólio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Meu Portfólio</h1>
+	</header>
+
+	<main>
+        <section id="sobre-mim">
+            <h2>Pedro Henrique Santos Masloff</h2>
+            <p>20 Anos - Uberlândia - 34 9 9316-9889 - pedromasloff.drive@gmail.com 
+            </p>
+        </section>
+    
+        <section id="meus-empregos">
+            <h2>Experiência</h2>
+            <ul>
+                <li>
+                    <h3>Administrador de Segurança da Informação, GWCloud Tecnologia e Servicos S.A</h3>
+                    <p>JUN/2022 - Presente</p>
+                    <p>Descrição das minhas atividades na empresa 1</p>
+                </li>
+                <li>
+                    <h3>Analista de Suporte Computacional, ARCOM S/A</h3>
+                    <p>OUT/2020 - JUN/2022</p>
+                    <p>Responsável pela manutenção de computadores, servidores e NVR. 
+
+                        Monitoramento de Backup e processos utilizando o Zabbix. 
+                        
+                        Montagem de Servidores Windows Server e Linux. 
+                        
+                        Implementação do Secure Shell (SSH), verificando a segurança dos Deploys. 
+                        
+                        Realização de procedimentos de testes SD-WAN. 
+                        
+                        Utilização do Active Directory. </p>
+                </li>
+                <!-- Adicione mais itens, se necessário -->
+            </ul>
+        </section>
+    
+        <section id="meus-projetos">
+            <h2>Conhecimento e Projetos</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://placeimg.com/640/480/tech" alt="Projeto 1">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Habilidades</h4>
+                            <a href="minhas-habilidades.html" class="btn">Conhecer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placeimg.com/640/480/arch" alt="Projeto 2">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Atividades</h4>
+                            <a href="atividades.html" class="btn">Conhecer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placeimg.com/640/480/nature" alt="Projeto 3">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Projeto 3</h4>
+                            <p>Descrição do projeto 3</p>
+                            <a href="projeto3.html" class="btn">Conhecer</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais itens, se necessário -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>
